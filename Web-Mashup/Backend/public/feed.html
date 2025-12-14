@@ -1,0 +1,91 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Feed</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+
+
+  <link rel="stylesheet" href="assets/styles.css">
+  <link rel="stylesheet" href="assets/gridstyle.css">
+  <script src="assets/scripts.js"></script>
+  <script src="assets/feed.js"></script>
+  
+</head>
+
+<body>
+
+  <div class="row" style="border-radius: 0.5rem; height: 4rem; background: #f7f9fb; margin-bottom: 1rem;">
+
+    <div class="col-2" style="margin-top:auto;margin-bottom:auto;text-align: center;">
+      <span class="logo" style="margin-left: 25%; margin-top:auto; margin-bottom: auto;">TOPIKS</span>
+    </div>
+
+    <div class="col-8 center" style="margin-top:auto;margin-bottom:auto;text-align: center;">
+      <a id="newPosts" class="valid form-control newPostBtn" href="/">New Posts!</a>
+    </div>
+    <div class="col-2 center">
+      <span>
+        <a style="text-decoration: none" href="https://github.com/bita-alexandru/ReR" target="_blank" rel='noopener'>
+          <img class="image-size" alt="Github" src="https://img.icons8.com/wired/50/000000/github.png" />
+        </a>
+      </span>
+      <span>
+        <a href="/get_rss">
+          <img style="text-decoration: none" class="image-size" alt="RSS"
+            src="https://img.icons8.com/wired/64/000000/rss.png" />
+        </a>
+      </span>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-2">
+      <div class="sidebar" style="width: 75%; margin-left: 25%; margin-right: 25%;">
+
+        <ul style="list-style: none;">
+          <li>
+            <a href="/" style="text-decoration: none;">
+              <div>Feed</div>
+            </a>
+          </li>
+          <li>
+            <a href="/preferences" style="text-decoration: none;">
+              <div>Preferences</div>
+            </a>
+          </li>
+          <li>
+            <a href="/account" style="text-decoration: none;">
+              <div>Account</div>
+            </a>
+          </li>
+        </ul>
+
+      </div>
+
+
+    </div>
+
+    <div class="col-7 ml-1">
+      <div id="content" style="max-height: 620px; overflow: hidden; overflow-y:auto;">
+        <div>
+          <script>getFeed();</script>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p style="font-size: 10px; margin-left: 25%; margin-right: 25%; text-align: center; margin-top: 1.25%;">&copy; TOPIKS is
+    a multimedia aggregator developed by Adam Ioana, Bita Alexandru and Danu Teodor</p>
+
+</body>
+
+
+</html>
